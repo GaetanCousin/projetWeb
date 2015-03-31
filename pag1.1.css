@@ -1,6 +1,7 @@
 html {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
-}
+	font-family : Arial, Helvetica, sans-serif;
+ }
 body {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
   margin: 0;
@@ -93,5 +94,17 @@ img{
 	width:1300px;
 	height:400px;
 }
-
+/***************************************************/
+#d{
+	position:absolute; 	/*pour metre la boite dans une otre boite*/
+	top:5px;			/*distance de haut*/
+	right:10px;			/*Déplacement a droit */
+	width:250px;		/*largeur*/
+	height:20px;		/*hauteur*/
+	background-color: #4eaefd;  
+	padding:10px;		/*interieur*/
+	text-align:center;
+	font-style: italic;
+	font-weight: bold;
+}
  

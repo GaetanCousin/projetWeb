@@ -41,11 +41,11 @@
 					</p>
 					<p>
 						<label id="formulaire">Mot de passe:</label>
-						<input type="text" name="MPD" id="identifiant"/>
+						<input type="password" name="MPD" id="identifiant"/>
 					</p>
 					<p>
 						<label id="formulaire">Confirmer mot de passe:</label>
-						<input type="text" name="repeteMPD" id="identifiant"/>
+						<input type="password" name="repeteMPD" id="identifiant"/>
 					</p>
 					<p>
 						<label id="formulaire">E-mail:</label>

@@ -27,9 +27,10 @@
 			--><li><a href="connexion.php">Connexion</a></li>
 			</ul>
 		</div>
-		
+		<centre>
 		<div id="contenu">
 		<?php
+		session_start();
 		if(isset($_POST['submit'])){
 			$login=htmlentities(trim($_POST['login']));
 			$mdp=htmlentities(trim($_POST['mdp']));
@@ -40,13 +41,13 @@
 				mysql_select_db('projet');
 				$query=mysql_query("select * from utilisateur WHERE email_utilisateur='$login' and mot_de_passe_utilisateur='$mdp'");
 				$rows=mysql_num_rows($query);
-				echo $rows;
 				if($rows==1){
-					header('Location:pag1.1.html');
+					$_SESSION['login']=$login;
+					header('Location:session.php');
 				}
-				else "donnee incorect";
+				else echo "<center>Mot de passe ou identifiant incorrect</center>";
 			}							
-			else "complete les champs";
+			else echo "<center>Complete les champs</center>";
 		}
 		
 		
