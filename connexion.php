@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 <html>
 	<head>
-	 <link rel="stylesheet" type="text/css" href="pag1.1.css">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
 	<body> 
@@ -22,7 +22,7 @@
 			<ul id="nav"><!--
 			--><li><a href="pag1.1.html">Accueil</a></li><!--
 			--><li><a href="pageInscription.php">Inscription</a></li><!--
-			--><li><a href="#">A propos</a></li><!--
+			--><li><a href="aPropos.html">A propos</a></li><!--
 			--><li><a href="#">Contact</a></li><!--
 			--><li><a href="connexion.php">Connexion</a></li>
 			</ul>
@@ -72,7 +72,7 @@
 			</form>
 			<br></br>
 			<center>
-			<img src="pelicula.gif" alt="image" id="img" />
+			<img src="image/pelicula.gif" alt="image" id="img" />
 			</center>
 		</div>
 			<div id="piedpage"> lien 2 </div>

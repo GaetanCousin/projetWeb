@@ -1,7 +1,6 @@
 ﻿html {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
-	font-family : Arial, Helvetica, sans-serif;
- }
+}
 body {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
   margin: 0;
@@ -18,6 +17,18 @@ div#bandeau {	/*partie avec titre*/
 	font-size: 50px;
 }
 
+div#aPropos { /*contenue de la page*/
+	text-align : center;	/* centrage horizontal */
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	border:3px solid black;
+   	width:1000px;
+   	height:200px;
+   	margin: 10px auto;
+}
+	
+
 #recherche{	/*barre de recherche*/
 	position:absolute; 	/*pour metre la boite dans une otre boite*/
 	top:105px;			/*distance de haut*/
@@ -27,7 +38,7 @@ div#bandeau {	/*partie avec titre*/
 	background-color: #856D4D;
 	padding:10px;		/*interieur*/
 }
-div#p{	/*barre de recherche*/
+submit/div#p{	/*barre de recherche*/
 	position:absolute; 	/*pour metre la boite dans une otre boite*/
 	top:100px;			/*distance de haut*/
 	height:50px;		/*hauteur*/
@@ -94,17 +105,15 @@ img{
 	width:1300px;
 	height:400px;
 }
-/***************************************************/
-#d{
-	position:absolute; 	/*pour metre la boite dans une otre boite*/
-	top:5px;			/*distance de haut*/
-	right:10px;			/*Déplacement a droit */
-	width:250px;		/*largeur*/
-	height:20px;		/*hauteur*/
-	background-color: #4eaefd;  
-	padding:10px;		/*interieur*/
-	text-align:center;
-	font-style: italic;
+
+ div#aPropos { /*contenue de la page*/
+	text-align : center;	/* centrage horizontal */
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
+	font-size: 16px;
+	border:3px solid black;
+   	width:1000px;
+   	height:200px;
+   	margin: 10px auto;
+	padding: 15px;
 }
- 
