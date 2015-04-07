@@ -20,7 +20,7 @@
 	
 		<div id="menu">
 			<ul id="nav"><!--
-			--><li><a href="pag1.1.html">Accueil</a></li><!--
+			--><li><a href="pag1.1.php">Accueil</a></li><!--
 			--><li><a href="pageInscription.php">Inscription</a></li><!--
 			--><li><a href="aPropos.html">A propos</a></li><!--
 			--><li><a href="#">Contact</a></li><!--
@@ -38,7 +38,7 @@
 			{
 				$mdp=md5($mdp);
 				$connect=mysql_connect('localhost','root','');
-				mysql_select_db('projet');
+				mysql_select_db('projetweb');
 				$query=mysql_query("select * from utilisateur WHERE email_utilisateur='$login' and mot_de_passe_utilisateur='$mdp'");
 				$rows=mysql_num_rows($query);
 				if($rows==1){
