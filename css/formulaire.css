@@ -1,0 +1,14 @@
+th{
+	text-align:left;
+	padding-left:6px;			/*Déplace le texte une peu a droit  */
+	height: 60px;				/*Hauteur d’une cellule */
+}
+/*----------------------------------------*/
+th input{
+	border:1px solid #666;
+	border-radius : 5px ;
+	padding-left:6px;			/*Déplace le texte une peu a droit  */
+}
+fieldset{
+	margin:30px;
+}

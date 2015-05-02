@@ -1,0 +1,72 @@
+html { 
+	font-family : Arial, Helvetica, sans-serif;
+ }
+/*------------------------------------------------*/
+#Container{
+	width: 1300px;
+	height:auto;
+	margin-right: auto;								/*centre le div */
+	margin-left: auto;								/*centre le div */
+	margin-bottom:21px;
+	margin-top:21px;	
+	background-color: #111;
+}
+/*------------------------------------------------*/
+#Header{
+	height:150px;
+	background-color: #FFFFFF;
+	}
+/*------------------------------------------------*/
+#Header div{
+	opacity :0.5;  	
+}
+/*------------------------------------------------*/
+#Menu{
+	height:60px;
+	background-color: #CCC;
+}
+/*------------------------------------------------*/
+#SideBar{											/*élément dans le ligne avec une autre élément*/
+	width:200px;
+	height:400px;
+	background-color: #111;
+	float:left;						/*Situé sur la gauche*/
+	text-align:center;
+	color:#FFFFFF;
+	font-weight :bold;
+	font-style:italic;
+}
+/*------------------------------------------------*/
+#SideBar a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:none;
+}
+/*------------------------------------------------*/
+#MainBody{											/*élément dans le ligne avec une autre élément*/
+	width:1100px;
+	height:auto;
+	background-color: #4eaefd;
+	float:right;					/*Situé sur la droite*/
+}
+/*------------------------------------------------*/
+#Footer{
+	height:60px;
+	background-color: #444;
+	clear:both;						/*pour annulé le float*/
+}
+/*------------------------------------------------*/
+td{
+	height:20px;
+	width:400px;
+}
+/*------------------------------------------------*/
+table{
+	margin:20px;
+}
+/*------------------------------------------------*/
+input{
+	border-width :1px ;
+	border-bottom-left-radius : 10px ;
+	border-top-right-radius : 10px ;
+}

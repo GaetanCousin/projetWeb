@@ -2,7 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 <html>
 	<head>
-	 <link rel="stylesheet" type="text/css" href="pag1.1.css">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <script LANGUAGE="javascript">										//code dans le fichier HTML
+		 function afficherMessage (message) {
+			 if(document.getElementById)
+			document.getElementById('galerie').innerHTML = message;;
+			
+		}
+	</script>
 	</head>
 	
 	<body> 
@@ -20,7 +27,7 @@
 	
 		<div id="menu">
 			<ul id="nav"><!--
-			--><li><a href="pag1.1.html">Accueil</a></li><!--
+			--><li><a href="pag1.1.php">Accueil</a></li><!--
 			--><li><a href="pageInscription.php">Inscription</a></li><!--
 			--><li><a href="#">A propos</a></li><!--
 			--><li><a href="#">Contact</a></li><!--
@@ -33,10 +40,11 @@
 				<center>
 				<?php
 					include "connect.inc.php";	
-					$images=mysql_query("select affiche_film from film where year(date_sortie_film)=2014 ORDER BY `date_sortie_film` DESC limit 20");
-					while ($row = mysql_fetch_array($images)){
-				?>
-						<IMG style=" width:160px; height:221px;" src="<?php echo $row['affiche_film']; ?>" alt="Le France">
+					$images=mysql_query("select id_film, titre_film from film where year(date_sortie_film)=2014 ORDER BY `date_sortie_film` DESC limit 20");
+					while ($row = mysql_fetch_array($images)){ //src'?>
+						<span class="tit">TESE</span>
+						<IMG style=" width:160px; height:221px;" src=" <?php echo  'images/'.$row['id_film'].'.jpg'?>" onMouseOver="<?phpecho $row['titre_film'];?>">
+						
 				<?php } ?>
 				</center>
 				</div>	

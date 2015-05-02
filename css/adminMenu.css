@@ -1,0 +1,38 @@
+#Menu{
+	height:60px;
+	background-color: #CCC;
+}
+/*---------------------------------------*/
+#Menu ul{
+	margin:0;
+	padding:0;
+	left:30%;						/*pour centrer le menu */
+	position:relative;				/*pour centrer le menu */
+}
+/*---------------------------------------*/
+#Menu li{
+	list-style-type:none;			/*on enlève  le point que est devant ex( .Home )*/
+	float:left;						/*une élément au gauche d’une autre */
+	display:block;
+	width:150px;
+	height:60px;					/*la même dimension que la dive Menu*/
+	text-align:center;				/*alignement texte horizontale*/ 
+	line-height:55px;				/*alignement texte verticale */
+	border-width :20px ;
+	border-radius :10px;
+}
+/*---------------------------------------*/
+#Menu li a{
+	text-decoration:none;			/*enlève le texte souligne  */
+	color:#FFF;
+}
+/*---------------------------------------*/
+#Menu li:Hover{						/*pour changer de couleur quand on survole avec la souri */
+	background-color:#B4B6B0;
+}
+/*---------------------------------------*/
+#Menu li:Hover a{						
+	display:block;					/*pour faire clic sur toute la surface du bouton*/
+	color:#000;						/*pour changer de couleur quand on fait clic*/
+}
+/*---------------------------------------*/

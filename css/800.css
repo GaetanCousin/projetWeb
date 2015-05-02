@@ -1,0 +1,19 @@
+html { 
+	font-family : Arial, Helvetica, sans-serif;
+ }
+/*------------------------------------------------*/
+#Container{
+	width: 300px;
+}
+
+/*------------------------------------------------*/
+#SideBar{											/*élément dans le ligne avec une autre élément*/
+	width:100px;
+	
+}
+/*------------------------------------------------*/
+#MainBody{											/*élément dans le ligne avec une autre élément*/
+	width:200px;
+
+}
+/*------------------------------------------------*/

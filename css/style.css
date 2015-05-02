@@ -1,6 +1,7 @@
 ﻿html {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
-}
+	font-family : Arial, Helvetica, sans-serif;
+ }
 body {  /*pour que je peux travaille avec de % dans le height */
   height: 100%;
   margin: 0;
@@ -13,21 +14,9 @@ div#bandeau {	/*partie avec titre*/
 	font-weight: bold;
 	width:100%;
 	height:150px;
-	background-color: #4E3D28;  
+	background-color: #4eaefd;  
 	font-size: 50px;
 }
-
-div#aPropos { /*contenue de la page*/
-	text-align : center;	/* centrage horizontal */
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 16px;
-	border:3px solid black;
-   	width:1000px;
-   	height:200px;
-   	margin: 10px auto;
-}
-	
 
 #recherche{	/*barre de recherche*/
 	position:absolute; 	/*pour metre la boite dans une otre boite*/
@@ -35,15 +24,15 @@ div#aPropos { /*contenue de la page*/
 	right:10px;			/*Déplacement a droit */
 	width:200px;		/*largeur*/
 	height:20px;		/*hauteur*/
-	background-color: #856D4D;
+	background-color: #51000E;
 	padding:10px;		/*interieur*/
 }
-submit/div#p{	/*barre de recherche*/
+div#p{	/*barre de recherche*/
 	position:absolute; 	/*pour metre la boite dans une otre boite*/
 	top:100px;			/*distance de haut*/
 	height:50px;		/*hauteur*/
 	width:100%;			/*largeur*/
-	background-color: #4E3D28;
+	background-color: #651321;
 }
 /**********************menu**************/
 div#menu { /*barr noir*/
@@ -67,8 +56,8 @@ div#menu { /*barr noir*/
 	display:block;
  float:left;   
  width:100px;
- line-height:50px; /*hauteur de l'image de fond*/
- color:#DCDCD0;		/*couleur text*/
+ line-height:50px; 		/*hauteur de l'image de fond*/
+ color:#DCDCD0;			/*couleur text*/
  text-decoration:none;
 }
 /*********************fin**menu**********************/
@@ -76,13 +65,13 @@ div#contenu {			/*partie centrel*/
 	
 	width:auto;			/*largeur*/
 	height:700px;		/*hauteur*/
-	background-color:#766F64 ;
+	background-color: ;
 }
 div#piedpage {			/*partie bas*/
 	text-align : center;
 	width:auto;
 	height:70px;
-	background-color:#4E3D28;
+	background-color:#0C2320;
 }
 /**************************************************/
 
@@ -98,6 +87,13 @@ input#identifiant{		/*formulair*/
 	width: 200px;
 	height:20px;
 }
+select{		/*formulair*/
+	width:200px;
+	height:30px;
+}
+input#toto[type="submit"]{			/*bouton VALIDER*/
+	font-size:20px;
+	}
 input#toto[type="submit"]{			/*bouton VALIDER*/
 	font-size:20px;
 	}
@@ -105,15 +101,28 @@ img{
 	width:1300px;
 	height:400px;
 }
-
- div#aPropos { /*contenue de la page*/
-	text-align : center;	/* centrage horizontal */
-	font-family: Arial, Helvetica, sans-serif;
+/***************************************************/
+#d{
+	position:absolute; 	/*pour metre la boite dans une otre boite*/
+	top:5px;			/*distance de haut*/
+	right:10px;			/*Déplacement a droit */
+	width:250px;		/*largeur*/
+	height:20px;		/*hauteur*/
+	background-color: #4eaefd;  
+	padding:10px;		/*interieur*/
+	text-align:center;
+	font-style: italic;
 	font-weight: bold;
-	font-size: 16px;
-	border:3px solid black;
-   	width:1000px;
-   	height:200px;
-   	margin: 10px auto;
-	padding: 15px;
 }
+ /****************************************************/
+#galerie{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width:70%;
+	line-height:100px; 
+	background-color: #4eaefd
+}
+/*---------------------------------------------------------*/
+
+ 

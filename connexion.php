@@ -13,10 +13,6 @@
 		<div id="p">
 		</div>
 		
-			<form id="recherche" action="" method="post">
-			     <label for="recherche-texte"><input id="recherche-texte" name="q" placeholder="recherche" value="" title="recherche" type="text" onfocus="if(value=='recherche') this.value='';" /></label>
-				 <input value="OK" name="recherche-submit" id="recherche-submit" type="submit" class="awesome" />
-			</form>
 	
 		<div id="menu">
 			<ul id="nav"><!--
@@ -27,7 +23,7 @@
 			--><li><a href="connexion.php">Connexion</a></li>
 			</ul>
 		</div>
-		<centre>
+		
 		<div id="contenu">
 		<?php
 		session_start();
@@ -41,9 +37,17 @@
 				mysql_select_db('projetweb');
 				$query=mysql_query("select * from utilisateur WHERE email_utilisateur='$login' and mot_de_passe_utilisateur='$mdp'");
 				$rows=mysql_num_rows($query);
-				if($rows==1){
+				if($rows==1){									//si le login et le mod de passe exist
 					$_SESSION['login']=$login;
-					header('Location:session.php');
+					$query2=mysql_query("select * from utilisateur WHERE email_utilisateur='$login' and mot_de_passe_utilisateur='$mdp' and admin=0");
+					$rows2=mysql_num_rows($query2);
+					if($rows2==1){								//si il est utilisateur normal
+					
+						header('Location:userLog.php');
+					}
+					else header('Location:admin.php');			//sinon => (donc est adinistrateur)
+						
+					
 				}
 				else echo "<center>Mot de passe ou identifiant incorrect</center>";
 			}							
@@ -54,12 +58,12 @@
 		
 		?>
 		<br></br>
-			<form method="post" action="connexion.php"> <!--formulaire d'identification user-->
+		<form method="post" action="connexion.php"> <!--formulaire d'identification user-->
 				<fieldset>
 					<legend>Authentification</legend>
 					<p>
 					<label id="formulaire">Identifiant:</label>
-					<input type="test" value="" name="login" id="identifiant"/>
+					<input type="text" value="" name="login" id="identifiant"/>
 					</p>
 					<p>
 					<label id="formulaire">Mot de passe: </label>
