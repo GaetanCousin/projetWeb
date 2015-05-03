@@ -1,11 +1,11 @@
 ﻿html {  /*pour que je peux travaille avec de % dans le height */
-  height: 100%;
+	height: 100%;
 	font-family : Arial, Helvetica, sans-serif;
  }
 body {  /*pour que je peux travaille avec de % dans le height */
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 div#bandeau {	/*partie avec titre*/
 	text-align : center;	/* centrage horizontal */
@@ -18,16 +18,7 @@ div#bandeau {	/*partie avec titre*/
 	font-size: 50px;
 }
 
-#recherche{	/*barre de recherche*/
-	position:absolute; 	/*pour metre la boite dans une otre boite*/
-	top:105px;			/*distance de haut*/
-	right:10px;			/*Déplacement a droit */
-	width:200px;		/*largeur*/
-	height:20px;		/*hauteur*/
-	background-color: #51000E;
-	padding:10px;		/*interieur*/
-}
-div#p{	/*barre de recherche*/
+div#p{	
 	position:absolute; 	/*pour metre la boite dans une otre boite*/
 	top:100px;			/*distance de haut*/
 	height:50px;		/*hauteur*/
@@ -45,8 +36,8 @@ div#menu { /*barr noir*/
 	text-align: center; /* centrer le texte */
     width:500px;
     position:absolute; /* On permet de placer la zone où on veut */
-	left:35%;
-	right:35%;
+	left:37%;
+	right:37%;
 }
 #nav li {
 	display: inline;
@@ -72,6 +63,7 @@ div#piedpage {			/*partie bas*/
 	width:auto;
 	height:70px;
 	background-color:#0C2320;
+	clear:both;
 }
 /**************************************************/
 
@@ -116,13 +108,38 @@ img{
 }
  /****************************************************/
 #galerie{
-	display: block;
+	
 	margin-left: auto;
     margin-right: auto;
+	padding-top: 20px;
+    padding-bottom: 20px;
 	width:70%;
 	line-height:100px; 
-	background-color: #4eaefd
+	background-color: #4eaefd;
 }
 /*---------------------------------------------------------*/
-
- 
+.item{
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 190px;
+	height:330px;
+	background-color: #EEEEEE;
+	border: 1px solid black;
+	border-radius:5px;
+	margin-right: 10px;
+    margin-bottom: 10px;
+}
+.caption {
+    display: block;
+}
+/*---------------------------------------------------------*/
+#aPropos{
+	width:50%;
+	padding:30px;
+  	text-align: justify;
+	font-style: italic;
+	font-size : 20px ;   
+	border: 2px solid black;
+	border-radius:20px;
+}

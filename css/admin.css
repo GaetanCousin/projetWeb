@@ -36,10 +36,6 @@ html {
 	padding-right:10px;
 }
 /*------------------------------------------------*/
-#Deconnexion a{
-	text-decoration:none;			/*enlève le texte souligne  */
-}
-/*------------------------------------------------*/
 #Menu{
 	height:60px;
 	background-color: #CCC;
